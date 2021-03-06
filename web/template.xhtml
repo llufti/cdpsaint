@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <h:outputStylesheet name="primeicons/primeicons.css" library="primefaces" />
+        <h:outputStylesheet library="css" name="cdpsa.css"></h:outputStylesheet>
+        <meta name="viewport" content="width=device-width"  />
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:growl id="growl"  life="2000" /> 
+            <div class="panelTitulo">
+                <p:outputLabel value="CDP SERRA AZUL" class="lblTitulo" /> 
+                <p:commandButton class="btnMenu" icon="pi pi-list" type="button" onclick="PF('sidebar3').show()"  />
+                <div align="center" style="margin-top: 2%!important;" >
+                    <h:panelGrid columns="1" style="text-align: center;color: white;font-weight: bold  "  >
+                        <p:outputLabel value="Rod Abraão Assed SP 333, Km 28.7, S/N, Zona rural" style="font-size: 80%!important;" />
+                        <p:outputLabel value="Serra Azul - SP, 14230-000" style="font-size: 80%!important;" />
+                        <p:outputLabel value="Telefone: (16) 3982-9130" style="font-size: 80%!important;" />
+                    </h:panelGrid>
+                </div>
+            </div>
+           
+
+
+            <p:sidebar widgetVar="sidebar3" position="top" style="height: 150px;">
+                <div style="text-align: center; border-radius: 10px 10px; border-color: #666666!important" >
+                    <p:outputLabel value="MENU"  />
+                </div>
+                <h:panelGrid columns="1" cellspacing="20" style="text-align: left" >
+                    <p:link href="/cdpsa/" value="HOME" style="color: black"  />
+                    
+                </h:panelGrid>
+                <div align="center">
+                    <p:commandLink value="DUVIDAS ?" />
+                </div>    
+            </p:sidebar>
+            <ui:insert></ui:insert>
+        </h:form>
+    </h:body>
+</html>
+

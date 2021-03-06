@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:decorate xmlns="http://www.w3.org/1999/xhtml"
+             xmlns:h="http://xmlns.jcp.org/jsf/html"
+             xmlns:p="http://primefaces.org/ui"
+             xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+             template="template.xhtml" >
+    <div align="center" style="margin-top: 8%!important;" >
+        <p:panelGrid columns="2" style="text-align: center!important;" >
+            <p:outputLabel value="Visitante:" class="lblTituloVisitante" />
+            <p:outputLabel value="#{cdpsaBean.visitantes.visitante}" class="lblVisitante" />
+        </p:panelGrid>
+
+        <p:fieldset legend="Setores" style="text-align: center;margin-top: 5%!important;" >
+            <h:panelGrid columns="2" style="text-align: center" cellspacing="15"  >
+                <p:commandButton value="Rol de Visitas" action="#{cdpsaBean.paginaRol()}" class="btnSetores" /> 
+                <p:commandButton value="Sindicancia" class="btnSetores" /> 
+                <p:commandButton value="Portaria" class="btnSetores" /> 
+                <p:commandButton value="Inclusão" class="btnSetores" /> 
+                <p:commandButton value="Peculio" class="btnSetores" /> 
+                <p:commandButton value="Informações" class="btnSetores" /> 
+            </h:panelGrid>
+        </p:fieldset>
+    </div>
+
+</ui:decorate>
+

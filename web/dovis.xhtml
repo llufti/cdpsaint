@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:decorate xmlns="http://www.w3.org/1999/xhtml"
+             xmlns:h="http://xmlns.jcp.org/jsf/html"
+             xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+             template="template.xhtml"
+             xmlns:p="http://primefaces.org/ui"
+             xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <p:card style="margin-top: 3%" >
+
+        <f:facet name="title">
+            DOCUMENTAÇÃO 
+        </f:facet>
+        <f:facet name="subtitle">
+            CADASTRO DE VISITANTES
+        </f:facet>
+
+        <p> 02 (duas) fotos 3x4 recentes;</p>
+        <p>  01 Cópia autenticada do RG ou passaporte;</p>
+        <p>  01 Cópia autenticada do CPF caso não tenha no RG;</p>
+        <p:link href="http://www2.ssp.sp.gov.br/atestado/novo/" value="Certidão de antecedentes criminais (Clique Aqui)." target="_blank" />
+        <p> Se for esposa do detento: Certidão de Casamento (cópia autenticada) ou Declaração de Convívio Marital (Download no final do artigo);</p>
+        <p:link href="https://servicos.dpf.gov.br/antecedentes-criminais/certidao" value="Para visitantes que residem fora do estado de São Paulo enviar também Antecedente Federal;" target="_blank" />
+        <p>  01 Cópia autenticada de comprovante de residência: de no máximo 6 meses (em nome do visitante. Ex: energia, água, telefone, gás, bancos, cartão de crédito)</p>
+        <p>  AVÓS: Apresentar cópia autenticada da Certidão de Nascimento do detento.</p>
+        <p style="color: red" > Quando a conta não estiver no nome do visitante, apresentar DECLARAÇÃO DE RESIDENCIA com firma reconhecida e cópia do comprovante</p>
+
+        <f:facet name="footer"  >
+            <h:panelGrid class="facetLinkConexao" columns="1" cellspacing="5" width="100%">
+                <p:link href="https://agendamentovirtual.sap.sp.gov.br/" value="Alguma duvida?" target="_blank" />
+            </h:panelGrid>
+        </f:facet>
+    </p:card>
+</ui:decorate>
+
